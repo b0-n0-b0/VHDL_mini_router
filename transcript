@@ -1,0 +1,903 @@
+# Loading project mini_router
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd failed with 8 errors.
+# 7 compiles, 1 failed with 8 errors.
+# Compile of round_robin_register.vhd failed with 8 errors.
+# Compile of round_robin_register.vhd failed with 2 errors.
+# Compile of round_robin_register.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 21:03:03 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+# ** Warning: (vsim-8683) Uninitialized out port /mini_router_tb/STD_DUT/grant_1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mini_router_tb/STD_DUT/grant_2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position 0  sim:/mini_router_tb/clk_tb
+add wave -position 1  sim:/mini_router_tb/reset_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:04:14 on Mar 19,2023, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 8
+# Compile of round_robin_register.vhd was successful.
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd failed with 1 errors.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd failed with 1 errors.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd failed with 1 errors.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 21:18:10 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+# ** Warning: (vsim-8683) Uninitialized out port /mini_router_tb/STD_DUT/grant_1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mini_router_tb/STD_DUT/grant_2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/reset_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:29:52 on Mar 19,2023, Elapsed time: 0:11:42
+# Errors: 0, Warnings: 9
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 21:33:00 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position 0  sim:/mini_router_tb/clk_tb
+add wave -position 1  sim:/mini_router_tb/reset_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:35:10 on Mar 19,2023, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 21:46:54 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/reset_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:47:46 on Mar 19,2023, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 21:49:52 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:53:51 on Mar 19,2023, Elapsed time: 0:03:59
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Break key hit
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:00:04 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:01:03 on Mar 19,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd failed with 1 errors.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 1 failed with 1 error.
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:03:53 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:05:12 on Mar 19,2023, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 3
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:08:30 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+add wave -position 1  sim:/mini_router_tb/reset_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:10:52 on Mar 19,2023, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:25:01 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/reset_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:27:32 on Mar 19,2023, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:27:57 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:31:27 on Mar 19,2023, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:31:37 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+quit -sim
+# End time: 22:32:39 on Mar 19,2023, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 2
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:32:44 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position 1  sim:/mini_router_tb/reset_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:34:33 on Mar 19,2023, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 1
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:36:39 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/reset_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:37:31 on Mar 19,2023, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 2
+# Compile of grant_register.vhd was successful.
+# Compile of input_register.vhd was successful.
+# Compile of mini_router.vhd was successful.
+# Compile of output_register.vhd was successful.
+# Compile of routing_logic.vhd was successful.
+# Compile of mini_router_tb.vhd was successful.
+# Compile of round_robin_register.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.mini_router_tb
+# vsim work.mini_router_tb 
+# Start time: 22:41:54 on Mar 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mini_router_tb(testbench)
+# Loading work.mini_router(struct)
+# Loading work.grant_register(behavioral)
+# Loading work.input_register(behavioral)
+# Loading work.output_register(behavioral)
+# Loading work.round_robin_register(behavioral)
+# Loading work.routing_logic(struct)
+add wave -position end  sim:/mini_router_tb/clk_tb
+add wave -position end  sim:/mini_router_tb/data_1_tb
+add wave -position end  sim:/mini_router_tb/data_2_tb
+add wave -position end  sim:/mini_router_tb/req_1_tb
+add wave -position end  sim:/mini_router_tb/req_2_tb
+add wave -position end  sim:/mini_router_tb/mini_router_std_out_tb
+add wave -position end  sim:/mini_router_tb/mini_router_valid_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_1_tb
+add wave -position end  sim:/mini_router_tb/mini_router_grant_2_tb
+run
+add wave -position 1  sim:/mini_router_tb/reset_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 22:42:30 on Mar 19,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 2
