@@ -27,27 +27,52 @@ end entity;
 architecture struct of routing_logic is
 begin
   -- data output selection
-  data_out <= data_1(N_in - 3 downto 0) when ((req_1 = '1' and req_2 = '0') or 
-                                              (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) > data_2(N_in - 1 downto N_in - 2)))or
-                                              (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) = data_2(N_in - 1 downto N_in - 2)) and rr_in = '0'))else
-              data_2(N_in - 3 downto 0) when ((req_2 = '1' and req_1 = '0') or 
-                                              (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) > data_1(N_in - 1 downto N_in - 2)))or
-                                              (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) and rr_in = '1'))else                        
-              old_out;
+  data_out <= data_1(N_in - 3 downto 0) when 
+              (
+                (req_1 = '1' and req_2 = '0') or 
+                (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) > data_2(N_in - 1 downto N_in - 2))) or
+                (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) = data_2(N_in - 1 downto N_in - 2)) 
+                  and rr_in = '0')
+              )
+              else data_2(N_in - 3 downto 0) when 
+              (
+                (req_2 = '1' and req_1 = '0') or 
+                (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) > data_1(N_in - 1 downto N_in - 2))) or
+                (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) 
+                  and rr_in = '1')
+              )                        
+              else old_out;
   -- grant up
-  grant_1 <= '1' when ((req_1 = '1' and req_2 = '0') or 
-                                              (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) > data_2(N_in - 1 downto N_in - 2)))or
-                                              (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) = data_2(N_in - 1 downto N_in - 2)) and rr_in = '0'))else
-              '0';
-  grant_2 <= '1' when ((req_2 = '1' and req_1 = '0') or 
-                                              (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) > data_1(N_in - 1 downto N_in - 2)))or
-                                              (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) and rr_in = '1'))else
-              '0';
+  grant_1 <= '1' when 
+              (
+                (req_1 = '1' and req_2 = '0') or 
+                (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) > data_2(N_in - 1 downto N_in - 2))) or
+                (req_1 = '1' and (data_1(N_in - 1 downto N_in - 2) = data_2(N_in - 1 downto N_in - 2)) 
+                  and rr_in = '0')
+              )
+              else '0';
+  grant_2 <= '1' when 
+              (
+                (req_2 = '1' and req_1 = '0') or 
+                (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) > data_1(N_in - 1 downto N_in - 2))) or
+                (req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) 
+                  and rr_in = '1')
+              )
+              else '0';
   -- valid up
   valid <= '1' when (req_1 = '1' or req_2 = '1') else '0';
 
   -- round robin handling
-  rr_out <= '0'  when ( req_1 = '1' and req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) and rr_in = '1') else
-            '1' when ( req_1 = '1' and req_2 = '1' and (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) and rr_in = '0') else
-            rr_in;
+  rr_out <= '0'  when 
+              (
+                req_1 = '1' and req_2 = '1' and 
+                (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) 
+                  and rr_in = '1'
+              ) 
+              else '1' when 
+              ( req_1 = '1' and req_2 = '1' and 
+                (data_2(N_in - 1 downto N_in - 2) = data_1(N_in - 1 downto N_in - 2)) 
+                  and rr_in = '0'
+              ) 
+              else rr_in;
 end architecture;         

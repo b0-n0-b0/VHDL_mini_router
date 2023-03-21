@@ -1,18 +1,10 @@
-/SSDM2/projects/mini_router/src/mini_router.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/mini_router.vhd
+/SSDM2/projects/mini_router/src/routing_logic.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/routing_logic.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity mini_router
--- Compiling architecture struct of mini_router
-
-} {} {}} /SSDM2/projects/mini_router/src/round_robin_register.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/round_robin_register.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity round_robin_register
--- Compiling architecture behavioral of round_robin_register
+-- Compiling entity routing_logic
+-- Compiling architecture struct of routing_logic
 
 } {} {}} /SSDM2/projects/mini_router/src/output_register.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/output_register.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -22,21 +14,30 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity output_register
 -- Compiling architecture behavioral of output_register
 
-} {} {}} /SSDM2/projects/mini_router/src/routing_logic.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/routing_logic.vhd
+} {} {}} /SSDM2/projects/mini_router/src/round_robin_register.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/round_robin_register.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity routing_logic
--- Compiling architecture struct of routing_logic
+-- Compiling entity round_robin_register
+-- Compiling architecture behavioral of round_robin_register
 
-} {} {}} /SSDM2/projects/mini_router/src/input_register.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/input_register.vhd
+} {} {}} /SSDM2/projects/mini_router/src/mini_router.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/mini_router.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity input_register
--- Compiling architecture behavioral of input_register
+-- Compiling entity mini_router
+-- Compiling architecture struct of mini_router
+
+} {} {}} /SSDM2/projects/mini_router/tb/mini_router_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/tb/mini_router_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mini_router_tb
+-- Compiling architecture testbench of mini_router_tb
 
 } {} {}} /SSDM2/projects/mini_router/src/grant_register.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/grant_register.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -45,5 +46,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity grant_register
 -- Compiling architecture behavioral of grant_register
+
+} {} {}} /SSDM2/projects/mini_router/src/input_register.vhd {1 {vcom -work work -2002 -explicit -stats=none /SSDM2/projects/mini_router/src/input_register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity input_register
+-- Compiling architecture behavioral of input_register
 
 } {} {}}

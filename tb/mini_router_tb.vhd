@@ -39,9 +39,6 @@ architecture testbench of mini_router_tb is
   -- CLK period (f_CLK = 125 MHz)
   constant T_clk : time := 8 ns;
 
-  -- Time before the reset release
-  constant T_reset : time := 10 ns;
-
   -----------------------------------------------------------------------------------------------------
   -- signals declaration
   -----------------------------------------------------------------------------------------------------
@@ -94,36 +91,68 @@ begin
   begin
     if (rising_edge(clk_tb)) then
       case (clock_cycle) is
-        when 1 =>
+        when 0 =>
           reset_tb <= '0';
+        when 1 =>
+          req_1_tb <= '1';
+          req_2_tb <= '0';
+          data_1_tb <= (9 downto 0 => '1');
+          data_2_tb <= (9 downto 0 => '1');
+        -- data_out:11111111|valid:1|grant_1:1|grant_2:0
         when 2 =>
-          req_1_tb <= '1';
+          req_1_tb <= '0';
           req_2_tb <= '1';
           data_1_tb <= (9 downto 0 => '1');
-          data_2_tb <= (9 downto 0 => '1');
+          data_2_tb <= (9 downto 0 => '0');
+        -- data_out:00000000|valid:1|grant_1:0|grant_2:1
         when 3 =>
-          req_1_tb <= '1';
-          req_2_tb <= '1';
-          data_1_tb <= (9 downto 0 => '1');
-          data_2_tb <= (9 downto 0 => '1');
+          req_1_tb <= '0';
+          req_2_tb <= '0';
+          data_1_tb <= "1010101010";
+          data_2_tb <= "1010101010";
+        -- data_out:00000000|valid:0|grant_1:0|grant_2:0
+
+        -- start of the priority tests
         when 4 =>
           req_1_tb <= '1';
           req_2_tb <= '1';
-          data_1_tb <= (9 downto 0 => '1');
-          data_2_tb <= (9 downto 0 => '1');
+          data_1_tb <= "01"&(7 downto 0 => '1');
+          data_2_tb <= (9 downto 0 => '0');
+        -- data_out:11111111|valid:1|grant_1:1|grant_2:0
         when 5 =>
           req_1_tb <= '1';
           req_2_tb <= '1';
-          data_1_tb <= (9 downto 0 => '1');
-          data_2_tb <= (9 downto 0 => '1');
+          data_1_tb <= "10"&(7 downto 0 => '0');
+          data_2_tb <= "01"&(7 downto 0 => '1');
+        -- data_out:00000000|valid:1|grant_1:1|grant_2:0
+
+        -- FIRST RR
         when 6 =>
           req_1_tb <= '1';
           req_2_tb <= '1';
-          data_1_tb <= (9 downto 0 => '1');
-          data_2_tb <= (9 downto 0 => '1');        
-        when others => 
+          data_1_tb <= "11"&(7 downto 0 => '1');
+          data_2_tb <= "11"&(7 downto 0 => '0');
+        -- data_out:11111111|valid:1|grant_1:1|grant_2:0    
+        when 7 =>
+          req_1_tb <= '1';
+          req_2_tb <= '1';
+          data_1_tb <= "10"&(7 downto 0 => '1');
+          data_2_tb <= "11"&(7 downto 0 => '0');
+        -- data_out:00000000|valid:1|grant_1:0|grant_2:1    
+        when 8 =>
           req_1_tb <= '0';
-          req_2_tb <= '0'; 
+          req_2_tb <= '0';
+          data_1_tb <= "11"&(7 downto 0 => '0');
+          data_2_tb <= "10"&(7 downto 0 => '1');
+        -- data_out:00000000|valid:0|grant_1:0|grant_2:0    
+        when 9 =>
+          req_1_tb <= '1';
+          req_2_tb <= '1';
+          data_1_tb <= "1011111111";
+          data_2_tb <= "1010101010";
+        -- data_out:10101010|valid:1|grant_1:0|grant_2:1            
+        when others => 
+          null;
       end case;
       clock_cycle := clock_cycle + 1;
     end if;
