@@ -1,0 +1,247 @@
+
+*** Running vivado
+    with args -log mini_router.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mini_router.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source mini_router.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/vivado/vivado.srcs/utils_1/imports/synth_1/mini_router.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/vivado/vivado.srcs/utils_1/imports/synth_1/mini_router.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mini_router -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5248
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1207.938 ; gain = 408.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mini_router' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:27]
+INFO: [Synth 8-3491] module 'grant_register' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/grant_register.vhd:5' bound to instance 'GRANT_REG_1' of component 'grant_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'grant_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/grant_register.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'grant_register' (0#1) [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/grant_register.vhd:17]
+INFO: [Synth 8-3491] module 'grant_register' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/grant_register.vhd:5' bound to instance 'GRANT_REG_2' of component 'grant_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:137]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'input_register' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/input_register.vhd:4' bound to instance 'INPUT_REG_1' of component 'input_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'input_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/input_register.vhd:21]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'input_register' (0#1) [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/input_register.vhd:21]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'input_register' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/input_register.vhd:4' bound to instance 'INPUT_REG_2' of component 'input_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:154]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'output_register' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/output_register.vhd:4' bound to instance 'OUTPUT_REG_1' of component 'output_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'output_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/output_register.vhd:21]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'output_register' (0#1) [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/output_register.vhd:21]
+INFO: [Synth 8-3491] module 'round_robin_register' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/round_robin_register.vhd:6' bound to instance 'ROUND_ROBIN_REG' of component 'round_robin_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'round_robin_register' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/round_robin_register.vhd:21]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'round_robin_register' (0#1) [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/round_robin_register.vhd:21]
+	Parameter N_in bound to: 10 - type: integer 
+	Parameter N_out bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'routing_logic' declared at 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/routing_logic.vhd:3' bound to instance 'ROUTING_LOGIC_1' of component 'routing_logic' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'routing_logic' [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/routing_logic.vhd:27]
+	Parameter N_in bound to: 10 - type: integer 
+	Parameter N_out bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'routing_logic' (0#1) [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/routing_logic.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'mini_router' (0#1) [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/src/mini_router.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1297.773 ; gain = 497.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1297.773 ; gain = 497.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1297.773 ; gain = 497.883
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1297.773 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/vivado/vivado.srcs/constrs_1/new/mini_router_zybo_constraint.xdc]
+Finished Parsing XDC File [C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/vivado/vivado.srcs/constrs_1/new/mini_router_zybo_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1361.625 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |     1|
+|4     |LUT4 |     2|
+|5     |LUT6 |     9|
+|6     |FDCE |    34|
+|7     |IBUF |    24|
+|8     |OBUF |    11|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1361.625 ; gain = 497.883
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.625 ; gain = 561.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1361.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 9184d898
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1361.625 ; gain = 942.055
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Franco Califano/Downloads/VHDL_mini_router-main/VHDL_mini_router-main/vivado/vivado.runs/synth_1/mini_router.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mini_router_utilization_synth.rpt -pb mini_router_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 22:08:41 2023...
