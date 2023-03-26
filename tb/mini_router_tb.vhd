@@ -12,8 +12,8 @@ architecture testbench of mini_router_tb is
 -----------------------------------------------------------------------------------------------------
   component mini_router is
     generic (
-    N_in    : natural := 10;
-    N_out   : natural := 8 
+      N_in    : natural := 10;
+      N_out   : natural := 8 
     );
     port(
       reset     : in std_logic;
@@ -46,7 +46,7 @@ architecture testbench of mini_router_tb is
   -- clk signal (initialized to '0')
   signal clk_tb : std_logic := '0';
 
-  -- Active high asynchronous reset (Active at clock_cycle = 0)
+  -- Active high asynchronous reset 
   signal reset_tb : std_logic := '1';
 
   -- Set to '0' to stop the simulation
@@ -152,7 +152,7 @@ begin
           data_2_tb <= "1010101010";
         -- data_out:10101010|valid:1|grant_1:0|grant_2:1            
         when others => 
-          null;
+          run_simulation <= '0';
       end case;
       clock_cycle := clock_cycle + 1;
     end if;
